@@ -1,0 +1,8 @@
+<script>
+if (localStorage['recursiveTest'] != null)
+localStorage['recursiveTest'] = (parseInt(localStorage['recursiveTest']) + 1).toString();
+else
+localStorage['recursiveTest'] = 0;
+var a = localStorage['recursiveTest'];
+document.write(a);
+location.reload(true);</script>
