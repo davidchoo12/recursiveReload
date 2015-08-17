@@ -17,7 +17,9 @@ else
 localStorage['recursiveTest'] = 0;
 var a = localStorage['recursiveTest'];
 document.write(a);
-location.reload(true);</script>
+var win = window.open(window.location.href,'_blank');
+win.focus();
+//location.reload(true);</script>
 </head>
 <body>
 </body>
