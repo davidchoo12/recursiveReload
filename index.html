@@ -18,7 +18,13 @@ localStorage['recursiveTest'] = 0;
 var a = localStorage['recursiveTest'];
 document.write(a);
 var win = window.open(window.location.href,'_blank');
-win.focus();
+if(win){
+    //Browser has allowed it to be opened
+    win.focus();
+}else{
+    //Broswer has blocked it
+    alert('All you have to do is just allow popup. :p\nIMPORTANT: to stop, click on stop if you are on desktop, tap on back if you are on android.\n*WARNING*IF ANYTHING IS BROKEN, I HOLD NO RESPONSIBILITIES*WARNING*');
+}
 //location.reload(true);</script>
 </head>
 <body>
